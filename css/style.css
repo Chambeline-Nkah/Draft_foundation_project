@@ -1,74 +1,119 @@
-/* Reset default styles for some elements */
-body, h1, h2, p, ul, li, a {
-    margin: 0;
-    padding: 0;
-}
+/* style.css */
 
 /* Global styles */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
-}
-
-header h1 {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
 }
 
 nav {
-    background-color: #444;
-    padding: 0.5rem;
+  background-color: #444;
+  padding: 0.5rem;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
 }
 
 nav li {
-    margin: 0 1rem;
+  display: inline-block;
+  margin-right: 1rem;
 }
 
-nav a {
-    color: #fff;
-    text-decoration: none;
-}
-
-nav a:hover {
-    color: #f1f1f1;
+nav li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem;
 }
 
 main {
-    padding: 1rem;
-}
-
-section {
-    margin-bottom: 2rem;
-}
-
-h2 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+  padding: 2rem;
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
+  background-color: #444;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
 }
 
+/* Home page specific styles */
+h1 {
+  margin: 0;
+}
+
+/* Sign-up page specific styles */
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+form button {
+  background-color: #333;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+/* Login page specific styles */
+h2 {
+  text-align: center;
+}
+
+main section {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+main section p {
+  text-align: center;
+}
+
+main section a {
+  display: block;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+/* Center the header text */
+header h1, header p {
+  text-align: center;
+}
+
+/* Center the navigation links */
+nav ul {
+  text-align: center;
+}
+
+/* Center the footer text */
 footer p {
-    font-size: 0.8rem;
+  text-align: center;
 }
-
-/* Additional styles for specific elements can be added here */
 
