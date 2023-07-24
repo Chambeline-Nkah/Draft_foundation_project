@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up - DigiGirls Technnovation</title>
+    <title>DigiGirls Technnovation - Sign Up</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header>
-        <h1>Sign Up for DigiGirls Technnovation</h1>
+        <h1>DIgiGirls Technovation</h1>
         <p>Learn coding from scratch</p>
     </header>
 
@@ -20,25 +20,77 @@
             <li><a href="courses.html">Courses</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="login.html">Login</a></li> <!-- Added link to Login page -->
         </ul>
     </nav>
 
     <main>
         <section>
-            <h2>Join DigiGirls Technnovation</h2>
+            <h2>Sign Up</h2>
+            <p>Sign up for free and create an account with DigiGirls Technnovation to improve your learning experiences.</p>
+            <p>Let's get to know you. Register here:</p>
             <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required><br>
+                <label for="title">Title:</label>
+                <select id="title" name="title">
+                    <option value="mr">Mr.</option>
+                    <option value="miss">Miss</option>
+                    <option value="mrs">Mrs.</option>
+                    <option value="ms">Ms.</option>
+                </select>
+                <br>
+
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+                <br>
+
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+                <br>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+                <br>
 
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br>
+                <input type="email" id="email" name="email" required>
+                <br>
 
                 <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required><br>
+                <input type="password" id="password" name="password" required>
+                <br>
 
-                <button type="submit">Sign Up</button>
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+                <br>
+
+                <label for="country">Country:</label>
+                <select id="country" name="country">
+                    <option value="nigeria">Nigeria</option>
+                    <option value="kenya">Kenya</option>
+                    <option value="southAfrica">South Africa</option>
+                    <option value="ghana">Ghana</option>
+                    <!-- Add more African country options as needed -->
+                </select>
+                <br>
+
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" required>
+                <br>
+
+                <label for="interests">Interests:</label>
+                <input type="text" id="interests" name="interests">
+                <br>
+
+                <label for="education">Education:</label>
+                <input type="text" id="education" name="education">
+                <br>
+
+                <label for="skills">Skills:</label>
+                <input type="text" id="skills" name="skills">
+                <br>
+
+                <input type="submit" value="Sign Up">
             </form>
+            <p>Already have an account? <a href="login.html">Login</a></p>
         </section>
     </main>
 
