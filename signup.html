@@ -25,70 +25,53 @@
 
     <main>
         <section>
-            <h2>Sign Up</h2>
-            <p>Sign up for free and create an account with DigiGirls Technnovation to improve your learning experiences.</p>
-            <p>Let's get to know you. Register here:</p>
-            <form>
+            <h2>Sign Up for Free</h2>
+            <p>Create an account with DigiGirls Technnovation to improve your learning experiences.</p>
+            <form action="submit_form.php" method="POST">
                 <label for="title">Title:</label>
                 <select id="title" name="title">
-                    <option value="mr">Mr.</option>
-                    <option value="miss">Miss</option>
-                    <option value="mrs">Mrs.</option>
-                    <option value="ms">Ms.</option>
-                </select>
-                <br>
+                    <option value="Miss">Miss</option>
+                    <option value="Mr">Mr</option>
+                    <option value="Mrs">Mrs</option>
+                </select><br>
 
-                <label for="firstName">First Name:</label>
-                <input type="text" id="firstName" name="firstName" required>
-                <br>
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" name="first_name" required><br>
 
-                <label for="lastName">Last Name:</label>
-                <input type="text" id="lastName" name="lastName" required>
-                <br>
+                <label for="last_name">Last Name:</label>
+                <input type="text" id="last_name" name="last_name" required><br>
 
                 <label for="age">Age:</label>
-                <input type="number" id="age" name="age" required>
-                <br>
+                <input type="number" id="age" name="age" min="13" required><br>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <br>
-
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
-                <br>
-
-                <label for="confirmPassword">Confirm Password:</label>
-                <input type="password" id="confirmPassword" name="confirmPassword" required>
-                <br>
+                <label for="gender">Gender:</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label><br>
 
                 <label for="country">Country:</label>
-                <select id="country" name="country">
-                    <option value="nigeria">Nigeria</option>
-                    <option value="kenya">Kenya</option>
-                    <option value="southAfrica">South Africa</option>
-                    <option value="ghana">Ghana</option>
-                    <!-- Add more African country options as needed -->
-                </select>
-                <br>
+                <select id="country" name="country" required>
+                    <option value="Nigeria">Nigeria</option>
+                    <option value="Ghana">Ghana</option>
+                    <option value="Kenya">Kenya</option>
+                    <!-- Add other African countries here -->
+                </select><br>
 
-                <label for="phoneNumber">Phone Number:</label>
-                <input type="tel" id="phoneNumber" name="phoneNumber" required>
-                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
 
-                <label for="interests">Interests:</label>
-                <input type="text" id="interests" name="interests">
-                <br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br>
 
-                <label for="education">Education:</label>
-                <input type="text" id="education" name="education">
-                <br>
+                <label for="confirm_password">Confirm Password:</label>
+                <input type="password" id="confirm_password" name="confirm_password" required><br>
 
-                <label for="skills">Skills:</label>
-                <input type="text" id="skills" name="skills">
-                <br>
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to the <a href="terms.html" target="_blank">Terms of Service</a> and <a
+                        href="privacy.html" target="_blank">Privacy Policy</a></label><br>
 
-                <input type="submit" value="Sign Up">
+                <button type="submit">Register</button>
             </form>
             <p>Already have an account? <a href="login.html">Login</a></p>
         </section>
