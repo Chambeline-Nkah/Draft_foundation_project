@@ -6,6 +6,9 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height:100vh;
 }
 
 header {
@@ -47,6 +50,7 @@ footer {
   color: #fff;
   text-align: center;
   padding: 1rem;
+  margin-top:auto;
 }
 
 /* Home page specific styles */
@@ -117,3 +121,123 @@ footer p {
   text-align: center;
 }
 
+css$ cat style.css 
+/* style.css */
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+nav {
+  background-color: #444;
+  padding: 0.5rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+nav li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+main {
+  padding: 2rem;
+}
+
+footer {
+  background-color: #444;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top:auto;
+}
+
+/* Home page specific styles */
+h1 {
+  margin: 0;
+}
+
+/* Sign-up page specific styles */
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+form button {
+  background-color: #333;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+/* Login page specific styles */
+h2 {
+  text-align: center;
+}
+
+main section {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+main section p {
+  text-align: center;
+}
+
+main section a {
+  display: block;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+/* Center the header text */
+header h1, header p {
+  text-align: center;
+}
+
+/* Center the navigation links */
+nav ul {
+  text-align: center;
+}
+
+/* Center the footer text */
+footer p {
+  text-align: center;
+}
