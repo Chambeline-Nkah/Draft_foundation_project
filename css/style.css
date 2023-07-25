@@ -267,3 +267,55 @@ footer p {
 .team-member p {
   margin-bottom: 1rem;
 }
+
+
+
+
+
+
+/* Contact page specific styles */
+.contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact-form button {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+/* Add some responsive styles for better user experience on smaller screens */
+@media screen and (max-width: 768px) {
+    .contact-form {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact-form {
+        padding: 1rem;
+    }
+}
