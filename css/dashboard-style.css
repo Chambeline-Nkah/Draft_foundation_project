@@ -1,3 +1,70 @@
+/* style.css */
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+/*  display: flex;
+  flex-direction: column;*/
+  min-height:100vh;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+nav {
+  background-color: #444;
+  padding: 0.5rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+nav li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+/* Main styles */
+main {
+  padding: 2rem;
+  flex: 1; /* Allow main to grow to fill available space */
+}
+footer {
+  background-color: #444;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top:auto;
+}
+
+/* Home page specific styles */
+h1 {
+  margin: 0;
+}
+
+
+
+
+
+
+
 /* dashboard-style.css */
 
 /* Course grid layout */
