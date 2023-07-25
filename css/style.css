@@ -241,3 +241,29 @@ nav ul {
 footer p {
   text-align: center;
 }
+
+
+/* About Us page specific styles */
+#about {
+  text-align: center;
+}
+
+.team-member {
+  display: inline-block;
+  margin: 1rem;
+}
+
+.team-member img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.team-member h4 {
+  margin-top: 1rem;
+}
+
+.team-member p {
+  margin-bottom: 1rem;
+}
